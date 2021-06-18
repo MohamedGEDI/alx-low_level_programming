@@ -12,9 +12,9 @@ for (x = 0; x < 99; x++)
 {
 for (y = 1; y < 100; y++)
 {
-if (x == y)
+if (y / 10 == 0 && y % 10 == 0)
 {
-continue;
+y = x + 1;
 }
 putchar((x / 10) + '0');
 putchar((x % 10) + '0');
@@ -27,10 +27,6 @@ break;
 }
 putchar(',');
 putchar(' ');
-if (y % 10 == 9 && y / 10 == 9)
-{
-y = x + 1;
-}
 }
 }
 putchar('\n');
