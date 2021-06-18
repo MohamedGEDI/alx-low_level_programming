@@ -27,6 +27,10 @@ break;
 }
 putchar(',');
 putchar(' ');
+if (y % 10 == 9 && y / 10 == 9)
+{
+y = x + 1;
+}
 }
 }
 putchar('\n');
