@@ -17,6 +17,10 @@ putchar((x % 10) + '0');
 putchar(' ');
 putchar((y / 10) + '0');
 putchar((y % 10) + '0');
+if (x == 98 && y == 99)
+{
+break;
+}
 putchar(',');
 putchar(' ');
 }
