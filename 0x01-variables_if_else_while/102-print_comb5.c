@@ -16,6 +16,10 @@ if (y / 10 == 0 && y % 10 == 0)
 {
 y = x + 1;
 }
+if ( x == y)
+{
+continue;
+}
 putchar((x / 10) + '0');
 putchar((x % 10) + '0');
 putchar(' ');
