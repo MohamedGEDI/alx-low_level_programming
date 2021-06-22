@@ -14,15 +14,22 @@ void times_table(void)
 		for (col = 0; col <= 9; col++)
 		{
 			res = row * col;
-			if (res <= 10)
+			if (res >= 10)
+			{
 				_putchar((res / 10) + '0');
-
-			_putchar((res % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+				_putchar((res % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar((res % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
 }
-
