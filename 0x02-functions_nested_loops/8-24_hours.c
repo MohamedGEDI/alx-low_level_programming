@@ -14,6 +14,8 @@ void jack_bauer(void)
 	{
 		for (lh = 0; lh <= 9; lh++)
 		{
+			if (fh == 2 && lh == 4)
+				break;
 			for (fm = 0; fm <= 5; fm++)
 			{
 				for (lm = 0; lm <= 9; lm++)
