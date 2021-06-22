@@ -8,15 +8,15 @@ int main(void)
 {
 	int first = 1;
 	int second = 2;
-	int next;
+	long int next;
 	int n = 50;
 	int i = 0;
-	
+
 	next = first + second;
 	printf("%d, %d, ", first, second);
 	for (; i < n; i++)
 	{
-		printf("%d, ", next);
+		printf("%ld, ", next);
 		first = second;
 		second = next;
 		next = first + second;
