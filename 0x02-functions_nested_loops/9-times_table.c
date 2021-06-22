@@ -17,12 +17,6 @@ void times_table(void)
 			res = row * col;
 			if (res >= 10)
 			{
-				if (col == 9)
-				{
-					_putchar((res / 10) + '0');
-					_putchar((res % 10) + '0');
-					continue;
-				}
 				_putchar(',');
 				_putchar(' ');
 				_putchar((res / 10) + '0');
@@ -30,11 +24,6 @@ void times_table(void)
 			}
 			else
 			{
-				if (col == 9)
-				{
-					_putchar((res % 10) + '0');
-					continue;
-				}
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
