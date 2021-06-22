@@ -16,6 +16,6 @@ int main(void)
 			res = res + n;
 		}
 	}
-	printf("%d", res);
+	printf("%d\n", res);
 	return (0);
 }
