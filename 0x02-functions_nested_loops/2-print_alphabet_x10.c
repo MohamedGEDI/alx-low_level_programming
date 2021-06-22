@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_alphabet - func to print alphabets
+ * print_alphabet_x10 - func to print alphabets ten times
 */
 void print_alphabet_x10(void)
 {
