@@ -9,6 +9,6 @@ int print_last_digit(int n)
 	int mod;
 
 	mod = n % 10;
-	_puchar(mod + '0');
+	_putchar(mod + '0');
 	return (mod);
 }
