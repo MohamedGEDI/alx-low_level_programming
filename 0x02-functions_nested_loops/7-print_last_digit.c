@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <limit.h>
 /**
  * print_last_digit - prints the last number
  * @n: inout parameter
@@ -7,7 +8,7 @@
 int print_last_digit(int n)
 {
 	int mod;
-	
+
 	if (n < 0)
 	{
 		n = -n;
