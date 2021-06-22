@@ -3,7 +3,6 @@
  * main - print holberton
  * Return: always 00
 */
-int _putchar(char c);
 int main(void)
 {
 	char a[] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n', '\n'};
