@@ -1,9 +1,10 @@
 #include "holberton.h"
+
 /**
  * main - test positive or negative
- * positive_or_negative - checks numbers positivity
  * Return: always zero
 */
+
 int main(void)
 {
 	int i;
