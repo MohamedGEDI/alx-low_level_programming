@@ -1,12 +1,13 @@
 #include "holberton.h"
 
 /**
- * print_line - prints the number of underscores
+ * print_diagonal - prints the number of diagonals
  * @n: input number
 */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
+	int j;
 
 	if (n <= 0)
 	{
@@ -16,8 +17,15 @@ void print_line(int n)
 	{
 		for (i = 0; i < n; i++)
 		{
+			if (i >= 1)
+			{
+				for (j = 0; j < i; j++)
+				{
+					_putchar(' ');
+				}
+			}
 			_putchar('\\');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
