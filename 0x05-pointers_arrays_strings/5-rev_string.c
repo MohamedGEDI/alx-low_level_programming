@@ -6,7 +6,17 @@
 */
 void rev_string(char *s)
 {
-	char *rev;
-	rev = strrev(s);
-	*s = rev;
+	char tmp
+	char *start = s;
+	char *end = start + strlen(s) - 1;
+
+	while (end > start)
+	{
+		tmp = *start;
+		*start = *end;
+		*end = tmp;
+
+		start++;
+		end--;
+	}
 }
