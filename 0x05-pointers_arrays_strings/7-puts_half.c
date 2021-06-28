@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <string.h>
 /**
  *puts_half - prints a last half of a string
  *@str: parameter
