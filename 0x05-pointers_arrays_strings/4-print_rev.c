@@ -1,29 +1,21 @@
 #include "holberton.h"
+#include <string.h>
 /**
- *print_rev - print string reverse
- *@s: string pointer
+ *print_rev - print from reverse
+ *@s: parameter argument
 */
 void print_rev(char *s)
 {
-	int strlen;
-	int c;
-	char *begin;
-	char *end;
-	char tmp;
+	int i;
+	int count;
+	int length;
 
-	strlen = _strlen(s);
-	begin = s;
-	end = s;
-
-	for (c = 0; c < (strlen - 1); c++)
-		end++;
-	for (c = 0; c < strlen / 2; c++)
+	count = 1;
+	length = strlen(s);
+	for (i = 1; i <= length; i++)
 	{
-		tmp = *end;
-		*end = *begin;
-		*end = tmp;
-
-		begin++;
-		end--;
+		_putchar(s[length - count]);
+		count++;
 	}
+	_putchar('\n');
 }
