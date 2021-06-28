@@ -6,15 +6,5 @@
 */
 void rev_string(char *s)
 {
-	int c;
-	int i;
-	int length;
-
-	length = strlen(s);
-	c = 0;
-	for (i = length; i >= 0; i--)
-	{
-		s[c] = s[i];
-		c++;
-	}
+	*s = strrev(s);
 }
