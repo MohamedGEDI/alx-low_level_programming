@@ -14,7 +14,7 @@ void puts_half(char *str)
 	}
 	else 
 	{
-		c = (strlen(str) - 1)  / 2;
+		c = (strlen(str) / 2) + 1;
 	}			
 	for (; str[c] != '\0'; c++)
 	{
