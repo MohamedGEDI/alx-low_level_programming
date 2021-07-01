@@ -4,7 +4,7 @@
 /**
  *reverse_array - reverse array
  *@a: int array
- *n: size of array
+ *@n: size of array
 */
 void reverse_array(int *a, int n)
 {
@@ -14,8 +14,8 @@ void reverse_array(int *a, int n)
 	{
 		if ((n - i) == 1)
 		{
-			printf("%d", a[n-i]);
+			printf("%d", a[n - i]);
 		}
-		printf("%d, ", a[n-i]);
+		printf("%d, ", a[n - i]);
 	}
 }
