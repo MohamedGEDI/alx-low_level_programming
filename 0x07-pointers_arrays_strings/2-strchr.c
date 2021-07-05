@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strchr - find occurence 
+ *_strchr - find occurence
  *@s: string array
  *@c: char to be searched
  *Return: first occurence
