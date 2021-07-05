@@ -7,10 +7,10 @@
  *@accept: second string
  *Return: first occurence
 */
-unsigned int *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int *p = 0;
+	unsigned int p;
 
-	*p = strspn(s, accept);
+	p = strspn(s, accept);
 	return (p);
 }
