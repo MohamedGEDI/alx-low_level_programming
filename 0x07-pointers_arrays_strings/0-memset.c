@@ -8,12 +8,8 @@
  *@n: number of characters to initialize
  *Return: initialied array
 */
-char *_memset(char *s, char b, int n);
+char *_memset(char *s, char b, int n)
 {
-	while (n >= 0)
-	{
-		s[n] = b;
-		n--;
-	}
+	memset(s, b, n);
 	return (s);
 }
