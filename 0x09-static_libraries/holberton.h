@@ -5,6 +5,7 @@
 int _isalpha(int c);
 int _islower(int c);
 int _isupper(int c);
+int _abs(int n);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
