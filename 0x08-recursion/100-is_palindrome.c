@@ -8,10 +8,7 @@
 */
 int is_palindrome(char *s)
 {
-	int n;
-
-	n = strlen(s);
-	if (n == 0)
+	if (s == strrev(s))
 		return (1);
-	return (is_pal_check(s, 0, n - 1));
+	return (0);
 }

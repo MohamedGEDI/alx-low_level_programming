@@ -7,10 +7,17 @@
 int main(void)
 {
 int x;
-for (x = 10; x <= 19; x++)
+int gap = 2;
+for (x = 1; x < 90; x++)
 {
+if (x%10 == 0)
+{
+x = x + gap;
+gap++;
+}
+putchar((x/10) + '0');
 putchar((x % 10) + '0');
-if (x == 19)
+if (x == 89)
 {
 break;
 }
