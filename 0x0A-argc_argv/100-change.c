@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int amount, i, coin, rem;
-	int changes[] = {25, 10, 5, 2 , 1};
+	int changes[] = {25, 10, 5, 2, 1};
 	int total = 0;
 
 	amount = atoi(argv[1]);
@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", amount);
 	}
-	else 
+	else
 	{
-		for(i = 0; i < 5; i++)
+		for (i = 0; i < 5; i++)
 		{
 			if (amount >= changes[i])
 			{
@@ -37,6 +37,6 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("%d\n", total);
-	}	
+	}
 	return (0);
 }
