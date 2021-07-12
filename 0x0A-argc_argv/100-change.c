@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (amount == 0)
+	else if (amount <= 0)
 	{
-		printf("%d\n", amount);
+		printf("0\n");
 	}
 	else
 	{
