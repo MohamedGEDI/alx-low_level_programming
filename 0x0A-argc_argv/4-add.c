@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 /**
  *main - main to print contents of argv
  *@argc: number of commands
@@ -20,10 +21,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
+			if (!isdigit(argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 			sum = sum + atoi(argv[i]);
-			
+
 		}
-		
+
 		printf("%d\n", sum);
 	}
 	return (0);
