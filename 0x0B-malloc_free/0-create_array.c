@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib>
 /**
  *create_array - creates an array using malloc
  *@size: size of array
