@@ -22,16 +22,24 @@ char *str_concat(char *s1, char *s2)
 	if (ar == NULL)
 		return (NULL);
 
-	else
+	if (s1 != NULL)
 	{
-		strcat(s1, s2);
-		while (s1)
+		while (*s1)
 		{
 			*ar = *s1;
 			s1++;
 			ar++;
 		}
-		return (s1);
 	}
-
+	if (s2 != NULL)
+	{
+		while (*s2)
+		{
+			*ar = *s2;
+			s2++;
+			ar++;
+		}
+	}
+	ar = ar - (len1 + len2);
+	return (ar);
 }
