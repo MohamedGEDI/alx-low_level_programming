@@ -25,8 +25,12 @@ char *str_concat(char *s1, char *s2)
 	else
 	{
 		strcat(s1, s2);
-		*ar = *s1;
-
+		while (s1)
+		{
+			*ar = *s1;
+			s1++;
+			ar++;
+		}
 		return (ar);
 	}
 
