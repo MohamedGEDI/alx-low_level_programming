@@ -10,9 +10,6 @@
 char *_strdup(char *str)
 {
 	char *array;
-	int len;
-
-	len = strlen(str);
 
 	if (str == NULL)
 	{
