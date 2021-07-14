@@ -4,7 +4,7 @@
 /**
  *alloc_grid - fun to allocate grid
  *@height: parameter
- *@width: parameter 
+ *@width: parameter
  *Return: a multidimensional array
 */
 int **alloc_grid(int width, int height)
@@ -37,5 +37,3 @@ int **alloc_grid(int width, int height)
 	}
 	return (p);
 }
-
-
