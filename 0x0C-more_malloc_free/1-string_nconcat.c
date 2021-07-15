@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "holberton.h"
 /**
  *string_nconcat - concat two strings
  *@s1: char in the array
@@ -37,17 +38,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			for (i = 0; i < len2; i++)
 			{
-				*(ar + i) = *(s2 + i);
+				*(ar + i) = s2[i];
 			}
 		}
 		if (n < len2)
 		{
 			for (i = 0; i < n; i++)
 			{
-				*(ar + i) = *(s2 + i);
+				*(ar + i) = s2[i];
 			}
 		}
 	}
-	ar = ar - (len1 + len2);
 	return (ar);
 }
