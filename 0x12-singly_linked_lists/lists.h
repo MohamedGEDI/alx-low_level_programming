@@ -4,11 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 /**
  * struct list_s - singly inked l,ist
- * @str: string 
+ * @str: string
  * @len: length of string
- * @next: points to next node 
+ * @next: points to next node
 */
 typedef struct list_s
 {
