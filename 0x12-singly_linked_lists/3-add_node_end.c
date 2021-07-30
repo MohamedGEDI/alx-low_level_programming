@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <string.h>
 /**
  *add_node_end - function to addnode to the tail
  *@head:current head of the linked list
