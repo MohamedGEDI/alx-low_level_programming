@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  *free_listint - deletes a linked list
- *head: head of the list 
+ *@head: head of the list
 */
 void free_listint(listint_t *head)
 {
