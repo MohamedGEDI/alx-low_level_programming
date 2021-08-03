@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - gets the int value of node at index
- * @head: linked list 
- * @index: index 
+ * @head: linked list
+ * @index: index
  * Return: value int
 */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -17,6 +17,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 			return (NULL);
 		temp = temp->next;
 		index--;
-       	}
+	}
 	return (temp);
 }
