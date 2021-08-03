@@ -4,6 +4,7 @@
  * @head: linked list
  * @idx: position
  * @n: data for node
+ * Return: node address
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -21,7 +22,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		(*head) = new_node;
 		return (new_node);
 	}
-	for (i = 0;i < (idx - 1); i++)
+	for (i = 0; i < (idx - 1); i++)
 	{
 		temp = temp->next;
 	}
