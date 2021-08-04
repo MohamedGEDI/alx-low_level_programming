@@ -6,9 +6,8 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * struct list_s - singly inked l,ist
- * @str: string
- * @len: length of string
+ * struct listint_s - singly inked l,ist
+ * @n: int
  * @next: points to next node
 */
 typedef struct listint_s
