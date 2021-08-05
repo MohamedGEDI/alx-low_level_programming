@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_binary - print dec to bin
- * n: dec
+ * @n: dec
 */
 void print_binary(unsigned long int n)
 {
