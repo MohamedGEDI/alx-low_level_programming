@@ -12,14 +12,14 @@ unsigned int binary_to_uint(char *b)
 	unsigned int base = 1;
 	int i;
 
-	i = strlen(b);
+	i = strlen(b) - 1;
+	
 
 	for (; i >= 0; i--)
-	{
-		if (!(b[i] == '1' || b[i] == '0') || b == NULL)
+	{	
+		if (b[i] != '0' && b[i] != '1')
 		{
-			decimal = 0;
-			return (decimal);
+			return (0);
 		}
 		if (b[i] == '1')
 		{
@@ -27,5 +27,6 @@ unsigned int binary_to_uint(char *b)
 		}
 		base *= 2;
 	}
+
 	return (decimal);
 }
