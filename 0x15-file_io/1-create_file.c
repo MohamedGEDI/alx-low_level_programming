@@ -6,7 +6,7 @@
  * @text_content: of letters to print
  * Return: 1 0r -1
 */
-int append_text_to_file(const char *filename, char *text_content)
+int create_file(const char *filename, char *text_content)
 {
 	int fd, w;
 	int len = strlen(text_content);
