@@ -1,36 +1,31 @@
 #include "main.h"
+#include <string.h>
 /**
- * read_textfile - read and print
+ * append_text_to_file - creates and wrtes
  * @filename: file name
- * @letters: of letters to print
- * Return: string buffer
+ * @text_content: of letters to print
+ * Return: 1 0r -1
 */
-ssize_t read_textfile(const char *filename, size_t letters)
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd;
-	char *buffer;
-	ssize_t rcount, wcount;
+	int fd, w;
+	int len = strlen(text_content);
+
 
 	if (filename == NULL)
-		return (0);
-	fd = open(filename, O_RDWR);
+		return (-1);
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 
 	if (fd == -1)
-		return (0);
-	buffer = malloc(letters);
-	if (buffer == NULL)
-		return (0);
+		return (-1);
 
+	if (text_content != NULL)
+	{
+		w = write(fd, text_content, len);
+		if (w == -1)
+			return (-1);
 
-	rcount = read(fd, buffer, letters);
-	if (rcount == -1)
-		return (0);
-	wcount = write(STDOUT_FILENO, buffer, rcount);
-
-	if (wcount == -1 || rcount != wcount)
-		return (0);
-	free(buffer);
-
+	}
 	close(fd);
-	return (wcount);
+	return (1);
 }
