@@ -5,7 +5,7 @@
  *@n: int
  *Return: address to new pointer
 */
-dlistint_t *add_nodeint(dlistint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new = malloc(sizeof(dlistint_t));
 
