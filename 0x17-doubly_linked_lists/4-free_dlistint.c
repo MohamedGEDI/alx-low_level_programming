@@ -3,16 +3,16 @@
  * free_dlistint - free soubly linked list
  * @head: linked list
 */
-void free_dlistint(dlistint *head)
+void free_dlistint(dlistint_t *head)
 {
-	dlistint *clear = head;
+	dlistint_t *clear = head;
 
 	if (head->next == NULL)
 		free(head);
 	while (head->next != NULL)
 	{
 		clear = head;
-		head = head->next
+		head = head->next;
 		free(clear);
 	}
 }
