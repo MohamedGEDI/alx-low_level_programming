@@ -2,7 +2,7 @@
 /**
  * insert_dnodeint_at_index - insert  at index
  * @h:linked list
- * @index: index to insert
+ * @idx: index to insert
  * @n: data
  * Return: updated list
 */
@@ -30,7 +30,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (count->next == NULL)
 		return (add_dnodeint_end(h, n));
 
-	if(new == NULL)
+	if (new == NULL)
 		return (NULL);
 
 	new->n = n;
