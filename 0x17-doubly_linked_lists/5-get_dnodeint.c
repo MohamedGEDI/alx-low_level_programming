@@ -5,7 +5,7 @@
  * @index: get node at index
  * Return: node atindex
 */
-dlistint_t *get_dnodeint(dlistint_t *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	dlistint_t *count = head;
 	unsigned int i = 0;
