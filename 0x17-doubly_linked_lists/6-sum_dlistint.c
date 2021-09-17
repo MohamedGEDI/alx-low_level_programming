@@ -6,11 +6,11 @@
 */
 int sum_dlistint(dlistint_t *head)
 {
-	if (head == NULL)
-		return (0);
 	dlistint_t *count = head;
 	int sum = 0;
 
+	if (head == NULL)
+		return (0);
 	while (count != NULL)
 	{
 		sum += count->n;
