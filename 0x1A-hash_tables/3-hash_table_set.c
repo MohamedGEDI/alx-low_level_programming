@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * hash_table_set - puts elemenets in hash tables
- * @ht: hash table 
+ * @ht: hash table
  * @key: key char
  * @value: key corresponding value
  * Return: 1 sucess 0 failure
@@ -36,4 +36,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node->next = ht->array[idx];
 	ht->array[idx] = node;
 	return (1);
-}			
+}
