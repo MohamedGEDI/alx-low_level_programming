@@ -20,14 +20,14 @@ void hash_table_print(hash_table_t *ht)
 			printf(", ");
 		if (node != NULL)
 		{
-			printf("%s: %s",node->key, node->value);
+			printf("'%s': '%s'",node->key, node->value);
 			flag = 1;
 			continue;
 		}
 		while (node != NULL)
 		{
 			flag = 1;
-			printf("%s: %s",node->key, node->value);
+			printf("'%s': '%s'",node->key, node->value);
 			if (node->next != NULL)
 				printf(", ");
 			node = node->next;
