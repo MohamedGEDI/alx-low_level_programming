@@ -8,6 +8,11 @@ int main(void)
 	hash_table_set(ht, "Mohamed", "Gedis son");
 	hash_table_set(ht, "Whatsapp", "Facebook");
 	hash_table_set(ht, "Youtube", "google");
+
+	hash_table_print(ht);
+
+	hash_table_delete(ht);
+
 	hash_table_print(ht);
 	return (0);
 }

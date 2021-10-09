@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * hash_table_print - print out ht
- * @:  ht
+ * @ht:  ht
 */
 void hash_table_print(hash_table_t *ht)
 {
