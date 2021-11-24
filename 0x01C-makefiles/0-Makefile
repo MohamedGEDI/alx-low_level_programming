@@ -1,0 +1,2 @@
+final:
+	gcc -Wall -Werror holberton.c main.c -o school
