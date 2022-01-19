@@ -1,4 +1,6 @@
 #include "search_algos.h"
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * binary_search - seach sorted list while slashing in half
  * @array: list
@@ -12,6 +14,8 @@ int binary_search(int *array, size_t size, int value)
 	int high = (int)size - 1;
 	int mid;
 
+	if (array == NULL)
+		return (-1);
 	while (low <= high)
 	{
 		mid = (high + low) / 2;
